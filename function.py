@@ -16,10 +16,5 @@ def factorial(n):
     return(fact_num)
 
 def es_primo(n):
-    num=n/2
-    primo= filter(lambda x: n % x ==0 ,range(1,int(num)+1))
-    print(len(list(primo)))
-    if len(list(primo))==1:
-        return(True)
-    else:
-        return(False)
+    primo= filter(lambda x: n % x ==0 ,range(1,int(n/2)+1))
+    return(False if len(list(primo)) > 1 else True)

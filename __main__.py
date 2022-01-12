@@ -15,9 +15,12 @@ def main():
     n=10
     fact=f.factorial(n)
     print("el factorial sumado de {num} es {fact}".format(num=n,fact=fact))
-    n=12
+    n=3110
     primo=f.es_primo(n)
-    print("Es {primo} que el numero {num} es primo".format(num=n,primo=primo))
+    if primo == False:
+        print("El numero {num} no es primo".format(num=n))
+    else:
+        print("El numero {num} es primo".format(num=n))
 
 if __name__ == '__main__':
     main()
